@@ -41,3 +41,7 @@ Full example in `example.html`
   })
 </script>
 ```
+
+## Changelog
+  v1.01: Convert to bower package
+  v1.0: Initial release
