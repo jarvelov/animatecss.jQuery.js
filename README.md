@@ -44,5 +44,7 @@ Full example in `example.html`
 ```
 
 ## Changelog
-  v1.01: Convert to bower package
-  v1.0: Initial release
+```
+  v1.01 (2016-05-05): Convert to bower package
+  v1.0 (2016-05-05): Initial release
+```
