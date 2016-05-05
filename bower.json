@@ -1,0 +1,29 @@
+{
+  "name": "animatecss.jquery.js",
+  "authors": [
+    "Tobias Järvelöv <tobias@jarvelov.se>"
+  ],
+  "description": "A jQuery plugin to animate any element using animate.css (by daneden) classes. Chain multiple animations and add extra css properties for the duration of the animations.",
+  "main": "animatecss.jquery.js",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "jQuery",
+    "css3",
+    "animations",
+    "animate.css"
+  ],
+  "license": "MIT",
+  "homepage": "https://tobias.jarvelov.se/portfolio/animatecss-jquery-js/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "animate.css": "^3.5.1"
+  }
+}
