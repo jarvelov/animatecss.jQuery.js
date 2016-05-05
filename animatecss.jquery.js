@@ -12,7 +12,7 @@
     Chain multiple animations and add extra css properties for the duration
 * @changelog:
   v1.01: Convert to bower package
-  v1.0:Initial release
+  v1.0: Initial release
 **/
 (function($) {
   $.fn.animateCss = function(options) {
