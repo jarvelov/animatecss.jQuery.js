@@ -11,8 +11,8 @@
     jQuery plugin to animate any element using animate.css (by daneden) classes.
     Chain multiple animations and add extra css properties for the duration of the animations
 * @changelog:
-  2015-05-05: Initial release
-  2015-05-05: Convert to bower package
+  v1.01: Convert to bower package
+  v1.0:Initial release
 **/
 (function($) {
   $.fn.animateCss = function(options) {
