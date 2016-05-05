@@ -86,12 +86,10 @@
         promises[promises.length -1].always(function() {
           //Remove applied css, if any
           if(settings.css) {
-            $.each(settings.css, function(property) {
-              settings.css[property] = '';
-            });
-
             setTimeout(function() {
-              $(element).css(settings.css);
+              $.each(settings.css, function(property) {
+                $(element).css(property, '');
+              });
             }, settings.cssDelay);
           }
 
