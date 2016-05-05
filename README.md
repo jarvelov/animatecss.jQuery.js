@@ -21,20 +21,29 @@ A jQuery plugin to animate any element using [animate.css (by daneden)](https://
 ## Usage
 
 ```html
-<link rel="stylesheet" href="animate.css">
-<script src="jquery.js"></script>
-<script src="animatecss.jquery.js"></script>
-<input class="animate-me" value="I will fade out and in">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <h3>This input element will be animated</h3>
+        <input class="animate-me" value="I will fade out and in">
 
-<script>
-  $('input.animate-me')..animateCss({
-    animations: ['fadeOut', 'fadeIn'],
-    css: {
-      backgroundColor: '#ffffff',
-      borderColor: '#66afe9',
-      boxShadow: '0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102,175,233, 0.6)'
-    },
-    cssDelay: 300
-  })
-</script>
+        <script src="jquery.js"></script>
+        <script src="animatecss.jquery.js"></script>
+
+        <script>
+          $('input.animate-me')..animateCss({
+            animations: ['fadeOut', 'fadeIn'],
+            css: {
+              backgroundColor: '#ffffff',
+              borderColor: '#66afe9',
+              boxShadow: '0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102,175,233, 0.6)'
+            },
+            cssDelay: 300
+          })
+        </script>
+    </body>
+</html>
 ```
