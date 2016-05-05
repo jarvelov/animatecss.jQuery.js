@@ -9,7 +9,7 @@
   animate.css: github.com/daneden/animate.css/
 * @description:
     jQuery plugin to animate any element using animate.css (by daneden) classes.
-    Chain multiple animations and add extra css properties for the duration of the animations
+    Chain multiple animations and add extra css properties for the duration
 * @changelog:
   v1.01: Convert to bower package
   v1.0:Initial release
