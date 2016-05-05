@@ -3,6 +3,7 @@
 A jQuery plugin to animate any element using [animate.css (by daneden)](https://daneden.github.io/animate.css/) classes. Chain multiple animations and add extra css properties for the duration of the animations.
 
 [Github](https://github.com/jarvelov/animatecss.jquery.js)
+
 [Project url](https://tobias.jarvelov.se/portfolio/animatecss.jquery.js/)
 
 ## Example
