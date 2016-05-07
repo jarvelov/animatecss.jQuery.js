@@ -2,7 +2,7 @@
 * @name: $.fn.animateCss
 * @author: Tobias Järvelöv <tobias@jarvelov.se>
 * @created: 2016-05-05
-* @version: 1.02
+* @version: 1.03
 * @url: https://tobias.jarvelov.se/portfolio/animatecss.jquery.js
 * @dependencies:
   jQuery > 1.8
