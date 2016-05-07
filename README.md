@@ -45,6 +45,7 @@ Full example in `example.html`
 
 ## Changelog
 ```
+  v1.03 (2016-06-07): Return a promise that resolves when all operations are complete
   v1.02 (2015-05-06): Fix css not resetting correctly
   v1.01 (2016-05-05): Convert to bower package
   v1.0 (2016-05-05): Initial release
