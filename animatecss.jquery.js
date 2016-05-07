@@ -47,17 +47,18 @@
         return def.promise();
       },
       init: function(element) {
-        var def = $.Deferred();
+        var chain = $.Deferred(); //This is the first deferred object that other processes will hook into
+        var complete = $.Deferred(); //Will be returned as a promise and resolved when all the sequences have completed
 
         //When the deferred object is resolved, apply css, if any
-        def.then(function() {
+        chain.then(function() {
           if(settings.css) {
             $(element).css(settings.css);
           }
         });
 
         //Programmatically build the sequence of animations
-        var promises = [def.promise()]; //Use the main deferred object as the first one in the chain
+        var promises = [chain.promise()]; //Use the main deferred object as the first one in the chain
         $.each(settings.animations, function(i, className) {
           var animation = $.Deferred();
 
@@ -86,14 +87,19 @@
             setTimeout(function() {
               $.each(settings.css, function(property) {
                 $(element).css(property, '');
+
+                complete.resolve();
               });
             }, settings.cssDelay);
+          } else {
+            complete.resolve();
           }
-
         })
 
         //Invoke the chain
-        def.resolve();
+        chain.resolve();
+
+        return complete.promise();
       }
     }
 
@@ -103,4 +109,4 @@
 
     return module;
   }
-}(jQuery))
+}(jQuery));
